@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     color: black;
     overflow-x: hidden;
-    background: rgb(193, 200, 209); /* Fundo claro */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .container {
@@ -148,7 +148,7 @@ section.visible {
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
-    color: #000; /* Títulos de seção em preto */
+    color: white; /* Títulos de seção em branco */
     margin-bottom: 3rem;
     position: relative;
 }
@@ -235,20 +235,20 @@ section.visible {
 }
 
 .project-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 2rem;
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .project-card::before {
@@ -258,7 +258,7 @@ section.visible {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 234, 0.1), transparent);
     transition: left 0.5s;
 }
 
@@ -280,12 +280,12 @@ section.visible {
 .project-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: black; /* Títulos dos projetos em preto */
+    color: white; /* Títulos dos projetos em branco */
     font-weight: 600;
 }
 
 .project-description {
-    color: black; /* Descrição dos projetos em cinza escuro */
+    color: rgba(255, 255, 255, 0.9); /* Descrição dos projetos em cinza escuro */
     line-height: 1.6;
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
@@ -299,18 +299,18 @@ section.visible {
 }
 
 .tech-tag {
-    background: rgba(11, 49, 219, 0.1);
-    color: black;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(9, 48, 226, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
 }
 
 .tech-tag:hover {
-    background: rgba(143, 6, 235, 0.945);
+    background: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
 }
 
@@ -318,7 +318,7 @@ section.visible {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.8rem 1.5rem;
-    background: linear-gradient(45deg, #3e5ada, #6e0ad1);
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -334,12 +334,11 @@ section.visible {
 
 /* Contact Section */
 #contact {
-    background: linear-gradient(135deg, #203ec4 0%, #764ba2 100%);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 3rem;
     margin-top: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-form {
@@ -353,7 +352,7 @@ section.visible {
 
 .form-group label {
     display: block;
-    color: black; /* Labels em preto */
+    color: white; /* Labels em branco */
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -362,10 +361,10 @@ section.visible {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #e0e0e0;
+    border: none;
     border-radius: 10px;
-    background: #f9f9f9;
-    color: black;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
     font-size: 1rem;
     transition: all 0.3s ease;
 }
@@ -373,20 +372,20 @@ section.visible {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    background: white;
-    border-color: #0b2eca;
+    background: rgba(255, 255, 255, 0.15);
+    border-color:rgba(255, 255, 255, 0.4);
     transform: scale(1.02);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #999;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .submit-btn {
     width: 100%;
     padding: 1rem 2rem;
-    background: linear-gradient(45deg, #0830e2, #760fdd);
+    background: linear-gradient(45deg, #667eea, #764ba2);
     color: white;
     border: none;
     border-radius: 25px;
