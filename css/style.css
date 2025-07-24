@@ -200,12 +200,19 @@ section.visible {
 }
 
 .skill-card {
-    background: linear-gradient(135deg, #052fe7 0%, #7607e4 100%);
+    background: linear-gradient(135deg, #5367c4 0%, #7607e4 100%);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .skills-grid .skill-card h3{
+    color: white;
+}
+.container .skills-grid .skill-card p{
+    color: white;
 }
 
 .skill-card:hover {
