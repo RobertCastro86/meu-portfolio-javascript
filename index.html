@@ -36,7 +36,33 @@
         <div class="container">
             <h2 class="section-title">Sobre mim</h2>
             <div class="about-content">
-                <div class="profile-photo">👨‍💻</div>
+                <div class="profile-container">
+                    <!-- Elementos de efeito visual -->
+                    <div class="profile-glow"></div>
+                    <div class="profile-ring"></div>
+                    <div class="floating-elements">
+                        <div class="floating-dot"></div>
+                        <div class="floating-dot"></div>
+                        <div class="floating-dot"></div>
+                        <div class="floating-dot"></div>
+                    </div>
+                    <div class="tech-orbit">
+                        <div class="tech-icon">💻</div>
+                        <div class="tech-icon">🎨</div>
+                        <div class="tech-icon">⚡</div>
+                        <div class="tech-icon">🚀</div>
+                    </div>
+                    
+                    <!-- Imagem do perfil (substitua pelo caminho da sua foto) -->
+                    <img src="./img/robert2.jpg" 
+                         alt="Foto de Robert Castro" 
+                         class="profile-photo" 
+                         id="profileImage"
+                         onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';">
+                    
+                    <!-- Placeholder caso a imagem não carregue -->
+                    <div class="profile-placeholder" id="profilePlaceholder" style="display: none;">👨‍💻</div>
+                </div>
                 <div class="about-text">
                     <p>Olá! Sou um desenvolvedor front-end júnior apaixonado por criar experiências web incríveis e funcionais. Tenho conhecimento sólido em HTML, CSS e JavaScript, e estou sempre buscando aprender novas tecnologias e frameworks como React e Typerscript.</p>
                     <p>Minha jornada na programação começou há 2 anos, e desde então venho desenvolvendo projetos pessoais e contribuindo para projetos open source. Acredito que a combinação de design atraente com código limpo e performático é fundamental para criar produtos digitais de sucesso.</p>
