@@ -10,20 +10,31 @@
     <meta name="author" content="Robert Castro">
     <title>Robert Castro - Desenvolvedor Front-end Jr</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <!-- From Uiverse.io by satyamchaudharydev --> 
+        <button class="button logo" data-text="Awesome">
+            <span class="actual-text">&nbsp;robert&nbsp;</span>
+            <span aria-hidden="true" class="hover-text">&nbsp;robert&nbsp;</span>
+        </button>
+        
+        <button title="menu" class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Serviços</a></li>
+            <li><a href="#projects">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
     </nav>
 
     <!-- Header/Hero Section -->
@@ -32,7 +43,20 @@
             <div class="header-content">
                 <h1>Robert Castro</h1>
                 <p class="subtitle">Desenvolvedor Front-end Jr</p>
-                <a href="#contact" class="cta-button">Vamos conversar!</a>
+                
+                <!-- From Uiverse.io by StealthWorm --> 
+    <button type="button" class="btn">
+        <strong>Vamos conversar!</strong>
+    <div id="container-stars">
+       <div id="stars"></div>
+    </div>
+
+     <div id="glow">
+       <div class="circle"></div>
+       <div class="circle"></div>
+     </div>
+    </button>
+
             </div>
         </div>
     </header>
@@ -277,7 +301,7 @@
             <p>&copy; 2025 Robert Castro - Desenvolvedor Front-end Jr. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script src="./js/menu.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
