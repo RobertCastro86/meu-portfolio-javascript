@@ -1,4 +1,4 @@
-// Smooth scrolling para os links de navegação
+/* Smooth scrolling para os links de navegação
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -10,9 +10,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       });
     }
   });
-});
+});*/
 
-// Mostrar/ocultar navbar ao rolar
+/* Mostrar/ocultar navbar ao rolar
 let lastScrollTop = 0;
 const navbar = document.getElementById("navbar");
 
@@ -32,7 +32,7 @@ window.addEventListener("scroll", function () {
   }
 
   lastScrollTop = scrollTop;
-});
+});*/
 
 // Animação de entrada das seções
 const observerOptions = {
