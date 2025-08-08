@@ -12,28 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });*/
 
-/* Mostrar/ocultar navbar ao rolar
-let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
-
-window.addEventListener("scroll", function () {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollTop > 100) {
-    if (scrollTop > lastScrollTop) {
-      // Rolando para baixo
-      navbar.classList.remove("visible");
-    } else {
-      // Rolando para cima
-      navbar.classList.add("visible");
-    }
-  } else {
-    navbar.classList.remove("visible");
-  }
-
-  lastScrollTop = scrollTop;
-});*/
-
 // Animação de entrada das seções
 const observerOptions = {
   threshold: 0.1,
@@ -180,7 +158,7 @@ function initProfileEffects() {
   profilePlaceholder.addEventListener("click", clickHandler);
 }
 
-// Função para trocar a imagem dinamicamente
+/*Função para trocar a imagem dinamicamente
 function changeProfileImage(imagePath) {
   const profileImage = document.getElementById("profileImage");
   const profilePlaceholder = document.getElementById("profilePlaceholder");
@@ -198,7 +176,7 @@ function changeProfileImage(imagePath) {
     profileImage.style.opacity = "1";
     profileImage.style.transform = "scale(1)";
   }, 100);
-}
+}*/
 
 // Criar partículas que seguem o cursor na área do perfil
 function createCursorParticles() {
