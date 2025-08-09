@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/button.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
+
         <!-- From Uiverse.io by satyamchaudharydev --> 
-        <button class="button logo" href="#home" data-text="Awesome">
+        <button class="button logo" href="home" data-text="Awesome">
             <span class="actual-text">&nbsp;robert&nbsp;</span>
             <span aria-hidden="true" class="hover-text">&nbsp;robert&nbsp;</span>
         </button>
@@ -46,7 +48,7 @@
                 <p class="subtitle">Desenvolvedor Front-end Jr.</p>
 
 <!-- From Uiverse.io by SelfMadeSystem --> 
-<button href="#contact" class="frutiger-button">
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"  href="contact" class="frutiger-button">
   <div class="inner">
     <div class="top-white"></div>
     <span class="text">Vamos Conversar!</span>
@@ -296,6 +298,13 @@
             </div>
             <p>&copy; 2025 Robert Castro - Desenvolvedor Front-end Jr. Todos os direitos reservados.</p>
         </div>
+        <!-- From Uiverse.io by vinodjangid07 --> 
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth'})" href="#home" type="button" title="Voltar ao Topo" class="button-topo">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+    ></path>
+        </svg>
+    </button>
     </footer>
     <script src="./js/menu.js"></script>
     <script src="js/script.js"></script>
