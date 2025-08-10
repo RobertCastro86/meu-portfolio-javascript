@@ -626,9 +626,10 @@ footer {
   font-size: var(--fs-size);
   font-family: "Arial";
   position: relative;
-  text-transform: uppercase;
+  text-transform: none;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
+  filter: drop-shadow(2px 4px 3px black);
 }
 /* this is the text, when you hover on button */
 .hover-text {
